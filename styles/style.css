@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background-color: #2B2730;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100px;
+  background: linear-gradient(130deg, #5D9C59, #F6FA70, #FF0060);
+  width: 360px;
+  cursor: default;
+  border-radius: 12px;
+  animation: animate 2.1s linear infinite;
+}
+.container .display {
+  display: grid;
+  place-items: center;
+  background-color: #2B2730;
+  border-radius: 12px;
+  height: 85px;
+  width: 340px;
+  z-index: 999;
+}
+.container .horas {
+  font-size: 50px;
+  font-weight: 580;
+  letter-spacing: 1px;
+  background: linear-gradient(130deg, #5D9C59, #F6FA70, #FF0060);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  animation: animate 2.4s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */

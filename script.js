@@ -1,0 +1,33 @@
+// usar a função setinterval
+// criar variaveis
+// criar condicionais
+// usar text content para criar o texto
+// arrumar no html
+
+console.log('kfkf')
+
+setInterval(() => {
+    const time = document.querySelector('.horas');
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    let day_night = "AM";
+
+    if(hours > 12) {
+        hours = hours - 12;
+    }
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+    if (hours > 12) {
+        day_night = "PM";
+    }
+    time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
+})

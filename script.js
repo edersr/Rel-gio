@@ -1,11 +1,3 @@
-// usar a função setinterval
-// criar variaveis
-// criar condicionais
-// usar text content para criar o texto
-// arrumar no html
-
-console.log('kfkf')
-
 setInterval(() => {
     const time = document.querySelector('.horas');
     let date = new Date();
